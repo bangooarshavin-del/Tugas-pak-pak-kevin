@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.navbar { display: flex; justify-content: space-between; align-items: center; background: #2c3e50; color: white; padding: 15px 20px; }
+.logo { font-weight: bold; font-size: 20px; }
+.menu-link { display: flex; list-style: none; gap: 20px; }
+.menu-link a { color: white; text-decoration: none; padding: 8px 12px; }
+
+@media (max-width: 600px) {
+  .navbar { flex-direction: column; text-align: center; }
+  .menu-link { flex-direction: column; margin-top: 15px; width: 100%; gap: 0; }
+  .menu-link a { display: block; padding: 12px; border-top: 1px solid rgba(255,255,255,0.2); }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">MyWeb</div>
+  <ul class="menu-link">
+    <li><a href="#">Beranda</a></li>
+    <li><a href="#">Profil</a></li>
+    <li><a href="#">Kontak</a></li>
+  </ul>
+</nav>
+<p style="padding:20px;">Kecilkan browser ke 600px, menu akan bertumpuk ke bawah.</p>
+</body>
+</html>
